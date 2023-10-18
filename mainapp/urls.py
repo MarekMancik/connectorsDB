@@ -21,5 +21,5 @@ import connectordb
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', connectordb.views.orm_tester)
+    # path('', connectordb.views.orm_tester)
 ]

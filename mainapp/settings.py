@@ -31,13 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # 'django.contrib.admin',
+    # 'django.contrib.admin',   # configurace admina
+
+    'connectordb.adminconfig.ConnectordbAdminConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'connectorDB'
+    'connectordb',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +78,12 @@ WSGI_APPLICATION = 'mainapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "WoQ6EVAbT9YBwqeg",
+        "HOST": "db.jajgwvguqkjuvjcjrley.supabase.co",
+        "PORT": "5432",  # Standardní port pro PostgreSQL
     }
 }
 

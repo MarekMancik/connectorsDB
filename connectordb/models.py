@@ -19,7 +19,7 @@ class Using(models.Model):
         ("p", "PCB"),
     ]
 
-    using = models.CharField(max_length=1, choices="USING")
+    using = models.CharField(max_length=1, choices=USING)
 
 class PinNumber(models.Model):
     pin_number = models.IntegerField()
