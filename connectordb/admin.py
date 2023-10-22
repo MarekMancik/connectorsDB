@@ -8,9 +8,7 @@ from connectordb.models import Connector, ConnectorName, Manufacturer, Using, Ty
 
 
 class ConnectorAdmin(admin.ModelAdmin):
-    list_display = ("part_number", "customer_number", "connector_name", "using", "manufacturer",)
-
-
+    list_display = ("part_number", "customer_number", "connector_name", "using", "pin_number", "row_number", "manufacturer")
 
 
 # Register your models here.
