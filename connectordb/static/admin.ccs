@@ -1,0 +1,6 @@
+/* Zvýraznění názvu Connectors v levém menu */
+a.section[href*="Connectors"] {
+    font-weight: bold; /* Tučný text */
+    font-size: 16px;   /* Větší písmo */
+    color: #ff0000;    /* Červená barva (změňte podle svého výběru) */
+}
